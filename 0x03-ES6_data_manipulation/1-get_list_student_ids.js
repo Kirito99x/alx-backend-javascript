@@ -1,10 +1,10 @@
 /**
- * @returns Array of student ids
- * 
- */
-export function getStudentIds() {
-    if (!Array.isArray(getListStudent)){
-        return [];
-    }
-    return getListStudent.map((student) => student.id);
+ * Retrieves ids from a list of students.
+* @returns
+*/
+export default function getListStudentIds(students) {
+ if (students instanceof Array) {
+   return students.map((student) => student.id);
+ }
+ return [];
 }
