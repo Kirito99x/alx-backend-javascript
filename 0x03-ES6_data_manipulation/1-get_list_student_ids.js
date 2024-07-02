@@ -1,4 +1,7 @@
-#!/usr/bin/node
+/**
+ * @returns Array of student ids
+ * 
+ */
 export function getStudentIds() {
     if (!Array.isArray(getListStudent)){
         return [];
